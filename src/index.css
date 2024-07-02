@@ -11,3 +11,141 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* estilos de header */
+.content-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  border-bottom: solid 5px red;
+}
+
+
+
+.imagen-1{
+  width: 50%;
+}
+
+.imagen-2{
+  width: 50%;
+}
+/* estilos de header */
+
+/* estilos para body  */
+.content-body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../src/Assets/Img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: auto;
+}
+
+.content-body h1{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.content-contador {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content-contador .time {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 5px #fff;
+  margin-right: 10px;
+}
+
+.view-video {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.view-video img {
+  padding: 30px;
+}
+
+.content-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #17202A;
+  color: #fff;
+}
+
+.images-video {
+  display: flex;
+  flex-direction: row;
+}
+
+.igamen-and-text {
+  display: flex;
+  flex-direction: column;
+}
+/* estilos para body  */
+
+
+/* estilos para footer  */
+.content-footer{ 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 95px;
+  background-color: #000;
+  color: #fff;
+  align-items: center;
+}
+
+.aviso {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+}
+.logo img {
+  height: 50px;
+}
+
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  width: 33.33%;
+}
+
+.redes-sociales img {
+  width: 33px;
+  height: 33px;
+  padding-right: 10px;
+}
+
+/* estilos para footer  */
