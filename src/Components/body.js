@@ -17,27 +17,12 @@ export const Body = () => {
     })
 
     const onCalculateTime = () => {
-        var year = new Date().getFullYear();
-        console.log('año año => ',year)
-        // var targetDate = new Date(year, 11, 31, 0, 0, 0)
-        // console.log('targetDate => ',targetDate)
-
-        // var now = new Date();
-        // console.log('now now => ',now)
-        // var difference = targetDate.getTime() - now.getTime()
-        // console.log('difference => ',difference)
-
-        //const endDate = new Date(year, 11, 31, 0, 0, 0);
         const endDate = new Date('2023-12-31T00:00:00.000Z');
-       
-
-        console.log('endate => ',endDate)
-
+        //console.log('endate => ',endDate)
         const now = new Date();
-        console.log('now now => ',now)
-        
+        //console.log('now now => ',now)
         const diff = endDate.getTime() - now.getTime()
-        console.log('difference => ',diff)
+        //console.log('difference => ',diff)
 
         if (diff > 0 ) {
             const intervalId = setInterval(() => {
