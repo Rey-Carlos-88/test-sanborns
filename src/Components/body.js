@@ -17,17 +17,17 @@ export const Body = () => {
     })
 
     const onCalculateTime = () => {
-        const endDate = new Date('2023-12-31T00:00:00.000Z');
+        const endDate = new Date('2024-12-31T00:00:00.000Z');
         //console.log('endate => ',endDate)
         const now = new Date();
         //console.log('now now => ',now)
-        const diff = endDate.getTime() - now.getTime()
+        const diff = endDate - now
         //console.log('difference => ',diff)
 
         if (diff > 0 ) {
             const intervalId = setInterval(() => {
                 const now = new Date();
-                const diff = endDate.getTime() - now.getTime();
+                const diff = endDate - now;
 
                 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
